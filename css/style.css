@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&family=DM+Serif+Display&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 1rem;
+  color: #1a2a2a;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: #0F4745;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #15BDB6;
+  text-decoration: underline;
+}
+
+/* =====================
+   HEADER & NAVIGATIE
+   ===================== */
+
+header {
+  background-color: #0F4745;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 2px solid #106D69;
+}
+
+nav .navbar-brand img {
+  height: 48px;
+  width: auto;
+}
+
+nav .nav-link {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-weight: 500;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.5rem 0.9rem !important;
+  border-radius: 4px;
+}
+
+nav .nav-link:hover {
+  color: #ffffff !important;
+  background-color: rgba(21, 189, 182, 0.15);
+  text-decoration: none;
+}
+
+nav .nav-link.active {
+  color: #15BDB6 !important;
+  background-color: rgba(21, 189, 182, 0.12);
+}
+
+/* =====================
+   HERO SECTIE
+   ===================== */
+
+.intro {
+  background-color: #0F4745;
+  padding: 6rem 0 5rem;
+}
+
+.intro h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  line-height: 1.15;
+}
+
+.intro h1 span {
+  color: #15BDB6;
+}
+
+.intro p {
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  line-height: 1.75;
+}
+
+/* =====================
+   ALGEMENE SECTIES
+   ===================== */
+
+section {
+  padding: 5rem 0;
+}
+
+.sectie-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: #15BDB6;
+  margin-bottom: 0.5rem;
+}
+
+.sectie-titel {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #0F4745;
+  margin-bottom: 0.8rem;
+}
+
+.sectie-tekst {
+  color: #557070;
+  margin-bottom: 1.5rem;
+  max-width: 560px;
+  line-height: 1.75;
+}
+
+.bg-licht {
+  background-color: #E8F7F7;
+}
+
+/* =====================
+   KNOPPEN
+   ===================== */
+
+.btn-eigen {
+  background-color: #15BDB6;
+  color: #0F4745;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.72rem 1.8rem;
+  border: none;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.btn-eigen:hover {
+  background-color: #106D69;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.btn-rand {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid rgba(255, 255, 255, 0.38);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.72rem 1.8rem;
+  border-radius: 6px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-rand:hover {
+  border-color: #15BDB6;
+  color: #15BDB6;
+  text-decoration: none;
+}
+
+/* =====================
+   PROJECTKAARTEN
+   ===================== */
+
+.project-kaart {
+  background-color: #ffffff;
+  border: 1px solid #c8e8e6;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.project-kaart:hover {
+  border-color: #15BDB6;
+}
+
+.project-kaart-afbeelding {
+  height: 160px;
+  background-color: #0F4745;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding-top: 60px;
+}
+
+.project-kaart-afbeelding::before {
+  content: '';
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: rgba(21, 189, 182, 0.12);
+  bottom: -50px;
+  left: -40px;
+}
+
+.project-kaart-afbeelding::after {
+  content: '';
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.06);
+  top: -20px;
+  right: -20px;
+}
+
+.project-kaart-afbeelding span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.18);
+  position: relative;
+  z-index: 1;
+}
+
+.project-kaart-body {
+  padding: 1.5rem;
+}
+
+.project-tech {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  color: #15BDB6;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.project-naam {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: #0F4745;
+  margin-bottom: 0.5rem;
+}
+
+.project-omschrijving {
+  font-size: 0.88rem;
+  color: #557070;
+  margin-bottom: 1.2rem;
+  line-height: 1.65;
+}
+
+/* =====================
+   STATISTIEKEN
+   ===================== */
+
+.stat-blok {
+  background-color: #ffffff;
+  border-left: 4px solid #15BDB6;
+  border-radius: 8px;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.stat-blok:hover {
+  background-color: #E8F7F7;
+}
+
+.stat-getal {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #0F4745;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: #557070;
+  margin-top: 0.1rem;
+}
+
+/* =====================
+   ZIJBALK
+   ===================== */
+
+.zijbalk-blok {
+  background-color: #E8F7F7;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.2rem;
+  border: 1px solid #c8e8e6;
+}
+
+.zijbalk-titel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #0F4745;
+  margin-bottom: 0.8rem;
+}
+
+/* =====================
+   TAGS
+   ===================== */
+
+.tag {
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid #b0d8d6;
+  border-radius: 20px;
+  font-size: 0.78rem;
+  padding: 0.25rem 0.7rem;
+  color: #0F4745;
+  margin: 0.2rem 0.15rem 0 0;
+}
+
+.tag:hover {
+  background-color: #15BDB6;
+  color: #0F4745;
+  border-color: #15BDB6;
+}
+
+/* =====================
+   KLEURBLOKJES
+   ===================== */
+
+.kleur-blokje {
+  width: 34px;
+  height: 34px;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 0, 0, 0.10);
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+
+/* =====================
+   CONTACT
+   ===================== */
+
+.contact-info-blok {
+  background-color: #0F4745;
+  border-radius: 12px;
+  padding: 2rem;
+  color: #ffffff;
+  height: 100%;
+}
+
+.contact-info-blok h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 1.6rem;
+  color: #ffffff;
+}
+
+.contact-rij {
+  margin-bottom: 1.2rem;
+}
+
+.contact-rij-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #15BDB6;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.contact-rij-waarde {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* =====================
+   PAGINA HERO (subpagina's)
+   ===================== */
+
+.pagina-hero {
+  background-color: #0F4745;
+  padding: 4.5rem 0 3.5rem;
+}
+
+.pagina-hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.pagina-hero p {
+  color: rgba(255, 255, 255, 0.70);
+  max-width: 480px;
+  margin-top: 0.6rem;
+  line-height: 1.7;
+}
+
+/* =====================
+   BREADCRUMB
+   ===================== */
+
+.breadcrumb-item a {
+  color: #15BDB6;
+}
+
+.breadcrumb-item.active {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: rgba(255, 255, 255, 0.35);
+}
+
+/* =====================
+   HR LIJN
+   ===================== */
+
+hr.eigen-lijn {
+  border: none;
+  border-top: 3px solid #15BDB6;
+  width: 40px;
+  margin: 1rem 0 1.8rem 0;
+  border-radius: 2px;
+}
+
+/* =====================
+   TABEL VAARDIGHEDEN
+   ===================== */
+
+table.vaardighedentabel {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+table.vaardighedentabel th {
+  background-color: #0F4745;
+  color: #ffffff;
+  padding: 0.8rem 1rem;
+  text-align: left;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+table.vaardighedentabel td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #d0e8e6;
+  color: #1a2a2a;
+}
+
+table.vaardighedentabel tr:nth-child(even) td {
+  background-color: #f4fbfb;
+}
+
+table.vaardighedentabel tr:hover td {
+  background-color: #daf4f3;
+}
+
+/* =====================
+   INSPIRATIEKAARTEN
+   ===================== */
+
+.inspiratie-kaart {
+  background-color: #ffffff;
+  border: 1px solid #c8e8e6;
+  border-top: 3px solid #15BDB6;
+  border-radius: 10px;
+  padding: 1.4rem;
+  height: 100%;
+}
+
+.inspiratie-kaart:hover {
+  border-color: #15BDB6;
+}
+
+.inspiratie-site {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #15BDB6;
+  margin-bottom: 0.5rem;
+}
+
+.inspiratie-tekst {
+  font-size: 0.87rem;
+  color: #557070;
+  line-height: 1.6;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+
+footer {
+  background-color: #0F4745;
+  border-top: 2px solid #106D69;
+  padding: 2.5rem 0;
+  text-align: center;
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.82rem;
+  margin: 0;
+}
+
+/* =====================
+   MEDIA QUERIES
+   ===================== */
+
+@media (max-width: 992px) {
+  .intro h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 3rem 0;
+  }
+
+  .intro {
+    padding: 4rem 0 3rem;
+  }
+
+  .intro h1 {
+    font-size: 2rem;
+  }
+
+  .pagina-hero {
+    padding: 3rem 0 2.5rem;
+  }
+
+  .pagina-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .contact-info-blok {
+    margin-top: 1.5rem;
+  }
+
+  .sectie-titel {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro h1 {
+    font-size: 1.7rem;
+  }
+}
