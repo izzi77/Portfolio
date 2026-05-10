@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Detailpagina: IoT Temperatuurmonitor – portfolio Issam Lamsayeh." />
+  <meta name="author" content="Issam Lamsayeh" />
+  <title>IoT Temperatuurmonitor – Issam Lamsayeh</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&family=DM+Serif+Display&display=swap" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/Logo.png" alt="Logo Issam Lamsayeh" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hoofdNav" aria-controls="hoofdNav" aria-expanded="false" aria-label="Navigatie openen">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="hoofdNav">
+          <ul class="navbar-nav gap-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="naam.html">Over mij</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+
+    <section class="pagina-hero">
+      <div class="container">
+        <nav aria-label="breadcrumb" class="mb-3">
+          <ol class="breadcrumb mb-0" style="background: transparent; padding: 0;">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="portfolio.html">Portfolio</a></li>
+            <li class="breadcrumb-item active" aria-current="page">IoT Temperatuurmonitor</li>
+          </ol>
+        </nav>
+        <p class="sectie-label">Python &amp; IoT</p>
+        <h1>IoT Temperatuurmonitor</h1>
+        <p>Met een DHT11-temperatuursensor aangesloten op een Raspberry Pi heb ik een Python-applicatie gebouwd die temperatuur en luchtvochtigheid uitleest, verwerkt en weergeeft in een lokaal dashboard.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-8">
+            <figure class="mb-4">
+              <img src="https://picsum.photos/id/128/800/400" alt="IoT Temperatuurmonitor - DHT11 sensor op Raspberry Pi" class="img-fluid" style="width: 100%; border-radius: 8px; border: 1px solid #c8e8e6;" />
+              <figcaption style="font-size: 0.78rem; color: #557070; margin-top: 0.4rem;">
+                Afbeelding: IoT Temperatuurmonitor &ndash; DHT11-sensor aangesloten op de Raspberry Pi. &copy; Issam Lamsayeh
+              </figcaption>
+            </figure>
+
+            <h2 class="sectie-titel">Wat heb ik geleerd?</h2>
+            <hr class="eigen-lijn" />
+            <p class="sectie-tekst">Ik leerde hoe je GPIO-pinnen aanstuurt vanuit Python, hoe je sensordata verwerkt en opslaat als JSON en hoe je een eenvoudige HTTP-API bouwt om data beschikbaar te stellen voor andere apparaten op het netwerk.</p>
+
+            <h2 class="sectie-titel mt-4">Aanpak</h2>
+            <hr class="eigen-lijn" />
+            <p class="sectie-tekst">Eerst sloot ik de DHT11-sensor aan op de juiste GPIO-pinnen. Daarna schreef ik een Python-script dat elke minuut de sensorwaarden uitleest en wegschrijft naar een JSON-bestand. Een tweede script serveert deze data via een minimale HTTP-server. Een eenvoudige HTML-pagina visualiseert de live data.</p>
+
+            <h2 class="sectie-titel mt-4">Resultaat</h2>
+            <hr class="eigen-lijn" />
+            <p class="sectie-tekst">Een werkend IoT-systeem dat continu temperatuur en luchtvochtigheid meet en weergeeft. Het project combineert hardware, Linux, Python en netwerken in een praktisch scenario.</p>
+          </div>
+
+          <aside class="col-lg-4">
+            <div style="background-color: #f0fbfb; border: 1px solid #c8e8e6; border-radius: 8px; padding: 1.5rem;">
+              <h3 style="font-size: 1rem; font-weight: bold; color: #0F4745; margin-bottom: 1rem;">Gebruikte technologieën</h3>
+              <p style="font-size: 0.88rem; color: #557070;">Python 3 &middot; RPi.GPIO &middot; DHT11-sensor &middot; Requests &middot; JSON &middot; Raspberry Pi</p>
+              <hr style="border-color: #c8e8e6;" />
+              <h3 style="font-size: 1rem; font-weight: bold; color: #0F4745; margin-bottom: 0.8rem;">Andere projecten</h3>
+              <ul style="font-size: 0.88rem; padding-left: 1rem; color: #557070; line-height: 2.2;">
+                <li><a href="project-portfolio-website.html" style="color: #0F4745;">Portfolio Website</a></li>
+                <li><a href="project-netwerk-ontwerp.html" style="color: #0F4745;">Netwerkontwerp Kantoor</a></li>
+                <li><a href="project-linux-server.html" style="color: #0F4745;">Linux Webserver op Raspberry Pi</a></li>
+                <li><a href="project-smart-home.html" style="color: #0F4745;">Smart Home Automatisering</a></li>
+                <li><a href="project-javascript-webapp.html" style="color: #0F4745;">Interactieve JavaScript Webapplicatie</a></li>
+              </ul>
+              <hr style="border-color: #c8e8e6;" />
+              <a href="portfolio.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Terug naar portfolio</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Issam Lamsayeh &mdash; Graduaat SNB/IoT &middot; AP Hogeschool Antwerpen</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

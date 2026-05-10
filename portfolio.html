@@ -11,18 +11,32 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700&family=DM+Serif+Display&display=swap" />
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .project-kaart-afbeelding img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+    }
+    .project-kaart-afbeelding {
+      padding: 0;
+      background: none;
+    }
+  </style>
 </head>
 <body>
 
-  
   <header>
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="assets/images/Logo.png" alt="Logo Issam Lamsayeh" />
         </a>
-        
-        <div class="navbar-collapse justify-content-end" id="hoofdNav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#hoofdNav" aria-controls="hoofdNav" aria-expanded="false" aria-label="Navigatie openen">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="hoofdNav">
           <ul class="navbar-nav gap-1">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
@@ -36,10 +50,8 @@
 
   <main>
 
-    
     <section class="pagina-hero">
       <div class="container">
-        
         <nav aria-label="breadcrumb" class="mb-3">
           <ol class="breadcrumb mb-0" style="background: transparent; padding: 0;">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -52,146 +64,156 @@
       </div>
     </section>
 
-    
     <section>
       <div class="container">
         <div class="row g-4">
 
-          
+          <!-- Project 1: Portfolio Website -->
           <div class="col-md-6 col-lg-4">
             <article class="project-kaart">
-              <div class="project-kaart-afbeelding"><span>?</span></div>
+              <div class="project-kaart-afbeelding">
+                <img src="https://picsum.photos/id/20/400/200" alt="Portfolio Website" />
+              </div>
               <div class="project-kaart-body">
-                <p class="project-tech">Technologie &middot; Technologie</p>
-                <h2 class="project-naam">Projectnaam</h2>
-                <p class="project-omschrijving">Beschrijving van het project komt hier. Voeg toe wat je gemaakt hebt, welke technieken je gebruikt hebt en wat het doel was.</p>
+                <p class="project-tech">HTML5 · CSS3 · Bootstrap</p>
+                <h2 class="project-naam">Portfolio Website</h2>
+                <p class="project-omschrijving">Een volledig responsieve portfoliowebsite met HTML5, CSS3 en Bootstrap 5. Toont mijn projecten, vaardigheden en contactinformatie.</p>
 
-                
                 <button class="btn btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#details1" aria-expanded="false" aria-controls="details1" style="background-color: transparent; border: 1px solid #15BDB6; color: #0F4745; font-size: 0.78rem;">
                   Meer details tonen
                 </button>
                 <div class="collapse" id="details1">
                   <div class="card card-body mb-2" style="font-size: 0.82rem; color: #557070; border-color: #c8e8e6; background-color: #f0fbfb;">
-                    Voeg hier extra details toe over het project: technieken, aanpak, resultaten, enz.
+                    Dit project omvat een volledige website met meerdere pagina's: Home, Portfolio, Over mij en Contact. De site is volledig responsief en maakt gebruik van Bootstrap 5 voor het grid en componenten.
                   </div>
                 </div>
 
-                <a href="naam.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Meer info</a>
+                <a href="project-portfolio-website.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Bekijk project</a>
               </div>
             </article>
           </div>
 
-          
+          <!-- Project 2: Netwerkontwerp Kantoor -->
           <div class="col-md-6 col-lg-4">
             <article class="project-kaart">
-              <div class="project-kaart-afbeelding"><span>?</span></div>
+              <div class="project-kaart-afbeelding">
+                <img src="https://picsum.photos/id/0/400/200" alt="Netwerkontwerp Kantoor" />
+              </div>
               <div class="project-kaart-body">
-                <p class="project-tech">Technologie &middot; Technologie</p>
-                <h2 class="project-naam">Projectnaam</h2>
-                <p class="project-omschrijving">Beschrijving van het project komt hier. Voeg toe wat je gemaakt hebt, welke technieken je gebruikt hebt en wat het doel was.</p>
+                <p class="project-tech">Cisco · VLAN · OSPF · ACL</p>
+                <h2 class="project-naam">Netwerkontwerp Kantoor</h2>
+                <p class="project-omschrijving">Ontwerp en configuratie van een bedrijfsnetwerk in Cisco Packet Tracer met VLAN's, OSPF-routering en ACL-beveiliging.</p>
 
                 <button class="btn btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#details2" aria-expanded="false" aria-controls="details2" style="background-color: transparent; border: 1px solid #15BDB6; color: #0F4745; font-size: 0.78rem;">
                   Meer details tonen
                 </button>
                 <div class="collapse" id="details2">
                   <div class="card card-body mb-2" style="font-size: 0.82rem; color: #557070; border-color: #c8e8e6; background-color: #f0fbfb;">
-                    Voeg hier extra details toe over het project: technieken, aanpak, resultaten, enz.
+                    Het netwerk is opgedeeld in subnetten per afdeling met VLAN's. Routers communiceren via OSPF en toegang is beveiligd met ACL's. Port security op switches verhindert ongewenste apparaten.
                   </div>
                 </div>
 
-                <a href="naam.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Meer info</a>
+                <a href="project-netwerk-ontwerp.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Bekijk project</a>
               </div>
             </article>
           </div>
 
-          
+          <!-- Project 3: Linux Webserver op Raspberry Pi -->
           <div class="col-md-6 col-lg-4">
             <article class="project-kaart">
-              <div class="project-kaart-afbeelding"><span>?</span></div>
+              <div class="project-kaart-afbeelding">
+                <img src="https://picsum.photos/id/96/400/200" alt="Linux Webserver op Raspberry Pi" />
+              </div>
               <div class="project-kaart-body">
-                <p class="project-tech">Technologie &middot; Technologie</p>
-                <h2 class="project-naam">Projectnaam</h2>
-                <p class="project-omschrijving">Beschrijving van het project komt hier. Voeg toe wat je gemaakt hebt, welke technieken je gebruikt hebt en wat het doel was.</p>
+                <p class="project-tech">Ubuntu · Apache · SSH · UFW</p>
+                <h2 class="project-naam">Linux Webserver op Raspberry Pi</h2>
+                <p class="project-omschrijving">Een Raspberry Pi omgebouwd tot een volledig geconfigureerde Linux-webserver met Apache, SSH-toegang en een firewall.</p>
 
                 <button class="btn btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#details3" aria-expanded="false" aria-controls="details3" style="background-color: transparent; border: 1px solid #15BDB6; color: #0F4745; font-size: 0.78rem;">
                   Meer details tonen
                 </button>
                 <div class="collapse" id="details3">
                   <div class="card card-body mb-2" style="font-size: 0.82rem; color: #557070; border-color: #c8e8e6; background-color: #f0fbfb;">
-                    Voeg hier extra details toe over het project: technieken, aanpak, resultaten, enz.
+                    Ubuntu Server op Raspberry Pi met SSH-toegang op afstand. Apache host een testwebsite, UFW blokkeert onnodige poorten. Bash-scripts automatiseren dagelijkse back-ups.
                   </div>
                 </div>
 
-                <a href="naam.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Meer info</a>
+                <a href="project-linux-server.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Bekijk project</a>
               </div>
             </article>
           </div>
 
-          
+          <!-- Project 4: IoT Temperatuurmonitor -->
           <div class="col-md-6 col-lg-4">
             <article class="project-kaart">
-              <div class="project-kaart-afbeelding"><span>?</span></div>
+              <div class="project-kaart-afbeelding">
+                <img src="https://picsum.photos/id/128/400/200" alt="IoT Temperatuurmonitor" />
+              </div>
               <div class="project-kaart-body">
-                <p class="project-tech">Technologie &middot; Technologie</p>
-                <h2 class="project-naam">Projectnaam</h2>
-                <p class="project-omschrijving">Beschrijving van het project komt hier. Voeg toe wat je gemaakt hebt, welke technieken je gebruikt hebt en wat het doel was.</p>
+                <p class="project-tech">Python · DHT11 · Raspberry Pi</p>
+                <h2 class="project-naam">IoT Temperatuurmonitor</h2>
+                <p class="project-omschrijving">Een DHT11-sensor leest temperatuur en luchtvochtigheid uit. Data wordt weergegeven in een lokaal dashboard.</p>
 
                 <button class="btn btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#details4" aria-expanded="false" aria-controls="details4" style="background-color: transparent; border: 1px solid #15BDB6; color: #0F4745; font-size: 0.78rem;">
                   Meer details tonen
                 </button>
                 <div class="collapse" id="details4">
                   <div class="card card-body mb-2" style="font-size: 0.82rem; color: #557070; border-color: #c8e8e6; background-color: #f0fbfb;">
-                    Voeg hier extra details toe over het project: technieken, aanpak, resultaten, enz.
+                    Python-script leest elke minuut de DHT11-sensor uit via GPIO. Data wordt opgeslagen als JSON en via een eenvoudige HTTP-API beschikbaar gesteld. HTML-pagina visualiseert live data.
                   </div>
                 </div>
 
-                <a href="naam.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Meer info</a>
+                <a href="project-python-iot.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Bekijk project</a>
               </div>
             </article>
           </div>
 
-          
+          <!-- Project 5: Smart Home Automatisering -->
           <div class="col-md-6 col-lg-4">
             <article class="project-kaart">
-              <div class="project-kaart-afbeelding"><span>?</span></div>
+              <div class="project-kaart-afbeelding">
+                <img src="https://picsum.photos/id/26/400/200" alt="Smart Home Automatisering" />
+              </div>
               <div class="project-kaart-body">
-                <p class="project-tech">Technologie &middot; Technologie</p>
-                <h2 class="project-naam">Projectnaam</h2>
-                <p class="project-omschrijving">Beschrijving van het project komt hier. Voeg toe wat je gemaakt hebt, welke technieken je gebruikt hebt en wat het doel was.</p>
+                <p class="project-tech">Python · MQTT · Node-RED</p>
+                <h2 class="project-naam">Smart Home Automatisering</h2>
+                <p class="project-omschrijving">Slimme thuisapparaten aangestuurd via een centrale Raspberry Pi met MQTT en Node-RED voor automatisering.</p>
 
                 <button class="btn btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#details5" aria-expanded="false" aria-controls="details5" style="background-color: transparent; border: 1px solid #15BDB6; color: #0F4745; font-size: 0.78rem;">
                   Meer details tonen
                 </button>
                 <div class="collapse" id="details5">
                   <div class="card card-body mb-2" style="font-size: 0.82rem; color: #557070; border-color: #c8e8e6; background-color: #f0fbfb;">
-                    Voeg hier extra details toe over het project: technieken, aanpak, resultaten, enz.
+                    Mosquitto MQTT-broker op Raspberry Pi. Node-RED flows voor automatisering zoals lichten dimmen bij zonsondergang. Bash-scripts voor automatisch herstarten van diensten.
                   </div>
                 </div>
 
-                <a href="naam.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Meer info</a>
+                <a href="project-smart-home.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Bekijk project</a>
               </div>
             </article>
           </div>
 
-          
+          <!-- Project 6: Interactieve JavaScript Webapplicatie -->
           <div class="col-md-6 col-lg-4">
             <article class="project-kaart">
-              <div class="project-kaart-afbeelding"><span>?</span></div>
+              <div class="project-kaart-afbeelding">
+                <img src="https://picsum.photos/id/42/400/200" alt="Interactieve JavaScript Webapplicatie" />
+              </div>
               <div class="project-kaart-body">
-                <p class="project-tech">Technologie &middot; Technologie</p>
-                <h2 class="project-naam">Projectnaam</h2>
-                <p class="project-omschrijving">Beschrijving van het project komt hier. Voeg toe wat je gemaakt hebt, welke technieken je gebruikt hebt en wat het doel was.</p>
+                <p class="project-tech">JavaScript · Leaflet.js · Fetch API</p>
+                <h2 class="project-naam">Interactieve JavaScript Webapplicatie</h2>
+                <p class="project-omschrijving">Een single-page webapplicatie met Leaflet-kaart, API-data en localStorage voor gebruikersvoorkeuren.</p>
 
                 <button class="btn btn-sm mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#details6" aria-expanded="false" aria-controls="details6" style="background-color: transparent; border: 1px solid #15BDB6; color: #0F4745; font-size: 0.78rem;">
                   Meer details tonen
                 </button>
                 <div class="collapse" id="details6">
                   <div class="card card-body mb-2" style="font-size: 0.82rem; color: #557070; border-color: #c8e8e6; background-color: #f0fbfb;">
-                    Voeg hier extra details toe over het project: technieken, aanpak, resultaten, enz.
+                    Vanilla JavaScript applicatie zonder frameworks. Leaflet.js voor interactieve kaart met markers. Fetch API haalt real-time data op. LocalStorage slaat gebruikersvoorkeuren op.
                   </div>
                 </div>
 
-                <a href="naam.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Meer info</a>
+                <a href="project-javascript-webapp.html" class="btn-eigen" style="font-size: 0.82rem; padding: 0.45rem 1rem;">Bekijk project</a>
               </div>
             </article>
           </div>
@@ -202,13 +224,12 @@
 
   </main>
 
-  
   <footer>
     <div class="container">
       <p>&copy; 2025 Issam Lamsayeh &mdash; Graduaat SNB/IoT &middot; AP Hogeschool Antwerpen</p>
     </div>
   </footer>
 
-  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
